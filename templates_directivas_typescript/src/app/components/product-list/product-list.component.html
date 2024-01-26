@@ -1,0 +1,13 @@
+
+<div class="product-list">
+
+    <h2  class="text-center">Productos</h2>
+    <div class="card-container">
+      <div *ngFor="let producto of listaDeProductos"  class="product-list--producto">
+        <app-product
+        (addToCart)="enviarAMiPadreParaQueSume($event)"
+        (deleteToCart)="enviarAMiPadreParaReste($event)"
+        [producto]="producto"></app-product>
+      </div>
+    </div>
+  </div>

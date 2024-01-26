@@ -1,0 +1,20 @@
+<div class="container">
+  <img src={{producto.imagen}} />
+
+  <div class="descripcion-producto">
+    <h2>{{producto.nombre}}</h2>
+    <p>{{producto.descripcion}}</p>
+  </div>
+
+<div>
+<!-- Aqui aprenderemos a utilizar los eventos nativos de angular -->
+<div class="buttons-container">
+  <button (click)="addToCartHandler(producto)" mat-icon-button class="white"><mat-icon  >add</mat-icon></button>
+  <button (click)="deleteToCartHandler(producto)" mat-icon-button class="white"><mat-icon>remove</mat-icon></button>
+</div>
+</div>
+</div>
+
+
+
+
